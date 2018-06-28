@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport", content = "width=device-width, initial-scale = 1">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavoon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <nav class="navbar fixed-top navbar-light">
+        <span class="navbar-brand mb-0 h1">
+           <!--  <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1xdB4G3tkGBsQ-Jpxgd3lJOI-L0WtxCoGhfLltM4Xby1Adr1x5Q" alt = " "> -->Pixel Art Maker
+        </span>
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYi14YlU5-8EpfxfYOQ0BdVitCR74LlcIoDzPyXIlXYUiLYpW" class = "img-fluid" width= "72" height= "72" class="d-inline-block align-top" alt = "logo">
+    </nav>
+<div class = "container">
+    <div class = "row">
+        <div class = "col-sm-3 picture">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4c3ekx2WNgDc8wZlVfcq9_9EYitZ29rC2PFIyFu5dw51FpTO" class = "img-fluid" alt = "">
+        </div>
+        <div class = "col-sm-6 main">
+            <header>
+                <h4>Choose Grid Size</h3>
+            </header>
+            <form class = "form-inline" id="sizePicker" onsubmit="makeGrid(); return false;">
+            Grid Height:
+            <input type="number" class = "mb-2 mr-sm-2" id="inputHeight" name="height" min="1" max="10" value="1"> 
+            Grid Width:
+            <input type="number" class = "mb-2 mr-sm-2" id="inputWidth" name="width" min="1" max= "10" value="1">
+            <input type="submit" class = "btn btn-primary btn-sm mb-2">
+            </form>
+            <!-- <img src = "https://www.svgimages.com/svg-image/s3/stickgirl-with-paintbrush-256x256.png" alt = ""> -->
+            <div id = "dummy"></div>
+            <section id = "design">
+                <h2>Pick A Color</h2>
+                <button type = "button" class = "btn btn-danger btn-sm mb-2" onclick = "clearGrid();">Delete Grid</button>
+                <input type="color" id="colorPicker">
+                <button type = "button" class = "btn btn-secondary btn-sm mb-2" onclick = "clearColor();">Clear Color</button>
+                <!-- <h2>Design Canvas</h2> -->
+            </section>
+             <table id="pixelCanvas">
+            </table>
+        </div>
+        <div class = "col-sm-3 picture">
+            <img src = "https://www.svgimages.com/svg-image/s3/stickgirl-with-paintbrush-256x256.png" class = "img-fluid" alt = "">
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+
+</html>

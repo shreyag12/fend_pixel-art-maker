@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 23px;
+}
+
+input[type="number"] {
+  width: 6em;
+}
+body{
+  font-family: Kavoon;
+}
+.navbar{
+  background-color: Gold;
+}
+#design{
+  display: none;
+}
+#sizePicker{
+  padding-top: 2%;
+  padding-left: 5%;
+}
+header{
+  padding-top: 18%;
+}
+.picture img{
+    padding-top: 56%;
+}
+/*body{
+  background: radial-gradient(circle, LightSeaGreen, YellowGreen, Yellow );
+
+}*/
+@media only screen and (min-width: 768px) and (max-width: 980px){
+  header{
+    padding-top: 40%;
+  }
+  .picture img{
+    padding-top: 70%;
+  }
+}
